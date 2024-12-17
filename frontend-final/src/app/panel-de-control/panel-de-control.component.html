@@ -1,0 +1,37 @@
+<div class="panel-container">
+    <h2>Lista de Pacientes</h2>
+  
+    <!-- Mensaje de carga -->
+    <div *ngIf="cargando" class="loading">
+      <p>Cargando pacientes...</p>
+    </div>
+  
+    <!-- Mensaje de error -->
+    <div *ngIf="error" class="error">
+      <p>{{ error }}</p>
+    </div>
+  
+    <!-- Tabla de pacientes -->
+    <table *ngIf="!cargando && !error && pacientes.length > 0" class="patient-table">
+      <thead>
+        <tr>
+          <th>Número de Tarjeta</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let paciente of pacientes">
+          <td>{{ paciente.numeroTarjeta }}</td>
+          <td>{{ paciente.nombre }}</td>
+          <td>{{ paciente.apellido }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Mensaje de lista vacía -->
+    <div *ngIf="!cargando && !error && pacientes.length === 0" class="empty-list">
+      <p>No hay pacientes registrados.</p>
+    </div>
+  </div>
+  

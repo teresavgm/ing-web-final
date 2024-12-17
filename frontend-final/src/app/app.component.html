@@ -1,0 +1,18 @@
+<div class="bg-primary text-white d-flex justify-content-between align-items-center py-3">
+  <!-- Contenedor para los botones alineados a la izquierda -->
+  <div class="d-flex">
+    <button class="btn btn-outline-light ms-3" [routerLink]="'/home'">Ir a Home</button>
+    <button class="btn btn-outline-light ms-3" [routerLink]="'/paciente'">Ir a Paciente</button>
+  </div>
+  <!-- Título centrado -->
+  <h1 class="m-0 text-center flex-grow-1">Sistema de gestión de triaje</h1>
+  <!-- Botón alineado a la derecha -->
+  <div>
+    <button class="btn btn-outline-light me-3" [routerLink]="'/panel-de-control'">Ir a Panel de Control</button>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <!-- El outlet de rutas, donde se renderizan las vistas de los componentes -->
+  <router-outlet></router-outlet>
+</div>

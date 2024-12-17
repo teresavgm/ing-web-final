@@ -1,0 +1,45 @@
+<div class="form-container">
+  <h2>Agregar Paciente</h2>
+  <form (ngSubmit)="agregarPaciente()" class="paciente-form">
+    <!-- Número de Tarjeta -->
+    <div class="form-group">
+      <label for="numeroTarjeta">Número de Tarjeta:</label>
+      <input
+        id="numeroTarjeta"
+        type="text"
+        [(ngModel)]="nuevoPaciente.numeroTarjeta"
+        name="numeroTarjeta"
+        required
+      />
+    </div>
+
+    <!-- Nombre -->
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input
+        id="nombre"
+        type="text"
+        [(ngModel)]="nuevoPaciente.nombre"
+        name="nombre"
+        required
+      />
+    </div>
+
+    <!-- Apellido -->
+    <div class="form-group">
+      <label for="apellido">Apellido:</label>
+      <input
+        id="apellido"
+        type="text"
+        [(ngModel)]="nuevoPaciente.apellido"
+        name="apellido"
+        required
+      />
+    </div>
+
+    <!-- Botón de envío -->
+    <div class="form-actions">
+      <button type="submit" class="btn-submit">Agregar Paciente</button>
+    </div>
+  </form>
+</div>

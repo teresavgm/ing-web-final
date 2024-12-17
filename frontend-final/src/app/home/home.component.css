@@ -1,0 +1,96 @@
+/* Estilo general para la página */
+.container {
+    max-width: 1200px; /* Más ancho para acomodar tarjetas más grandes */
+    padding: 50px 15px;
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 3.5rem; /* Incrementa el tamaño del título */
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilo para las tarjetas */
+  .card {
+    transition: all 0.3s ease;
+    max-width: 100%; /* Ahora las tarjetas ocupan más espacio */
+    margin: 0 auto; /* Centra las tarjetas */
+    padding: 20px; /* Más espacio interno */
+  }
+  
+  .card:hover {
+    transform: scale(1.08); /* Aumenta el efecto de zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Más prominente */
+  }
+  
+  .card-title {
+    font-size: 1.75rem; /* Incrementa el tamaño del título de la tarjeta */
+    color: #343a40;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    font-size: 1.1rem; /* Incrementa el tamaño del texto */
+    color: #6c757d;
+  }
+  
+  .card-body {
+    padding: 20px; /* Más padding para tarjetas más grandes */
+  }
+  
+  /* Botones */
+  .btn-lg {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  
+  .btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* Ajuste del tamaño de las columnas */
+  .col-md-6 {
+    max-width: 500px; /* Incrementa el ancho máximo de las columnas */
+    margin: 0 auto; /* Centra las columnas */
+  }
+  
+  /* Clase para uniformar las tarjetas */
+  .tarjeta-uniforme {
+    height: 100%; /* Permite que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+  }
+  
+  .tarjeta-uniforme .card-body {
+    flex-grow: 1; /* Asegura que el contenido ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea el contenido dentro de la tarjeta */
+  }
+  
+  /* Contenedor para alinear los botones */
+  .boton-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: auto; /* Empuja el botón hacia la parte inferior de la tarjeta */
+  }
+  
